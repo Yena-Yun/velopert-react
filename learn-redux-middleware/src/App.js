@@ -7,6 +7,6 @@ const App = () => {
       <SampleContainer />
     </div>
   );
-}
+};
 
 export default App;

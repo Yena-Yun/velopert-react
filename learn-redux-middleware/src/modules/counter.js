@@ -6,22 +6,6 @@ const DECREASE = 'counter/DECREASE';
 export const increase = createAction(INCREASE);
 export const decrease = createAction(DECREASE);
 
-//1초 뒤에 increase 혹은 decrease 함수를 디스패치함
-export const increaseAsync = () => dispatch => {
-    setTimeout(() => {
-        dispatch(increase());
-    }, 1000);
-};
-
-export const decreaseAsync = () => dispatch => {
-    setTimeout(() => {
-        dispatch(decrease());
-    }, 1000)
-};
-
-
-
-//초기화 상태는 꼭 객체일 필요 없음 (숫자도 작동)
 const initialState = 0;
 
 const counter = handleActions(

@@ -6,7 +6,7 @@ import loading from './loading';
 const rootReducer = combineReducers({
     counter,
     sample,
-    loading
+    loading,
 });
 
 export default rootReducer;
