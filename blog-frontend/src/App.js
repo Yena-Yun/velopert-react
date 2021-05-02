@@ -7,7 +7,7 @@ import PostPage from './pages/PostPage';
 import PostListPage from './pages/PostListPage';
 
 
-function App() {
+function App() { 
   return (
     <>
       <Route component={PostListPage} path={['/@:username', '/']} exact />
